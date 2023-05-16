@@ -2,7 +2,7 @@ import React from 'react';
 
 function SubscribeButton() {
   return (
-    <button>Subscribe</button>
+    <button style={{backgroundColor:'#ED2B2A', height:'30px' ,border:'none',width:'75px'}}>Subscribe</button>
   );
 }
 

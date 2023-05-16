@@ -1,14 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from './Components/LandingPage';
-import ShowsPage from './Components/ShowPage';
+import LandingPage from './Components/LandingPage/LandingPage';
+import ShowsPage from './Components/Shows/ShowPage';
 import MoviesPage from './Components/MoviesPage';
 import ComedyPage from './Components/ComedyPage';
 import NewsPage from './Components/NewsPage';
-import NavBar from './Components/Navbar';
-import SearchBar from './Components/SearchBar';
-import SubscribeButton from './Components/SubscribeButton';
-import LoginButton from './Components/LoginButton';
+import NavBar from './Components/Navbar/Navbar';
+import Recommended from './Components/Recommended/Recommended';
+
 
 function App() {
   return (
@@ -21,10 +20,9 @@ function App() {
         <Route path="/movies" element={<MoviesPage/>} />
         <Route path="/comedy" element={<ComedyPage/>} />
         <Route path="/news" element={<NewsPage/>} />
+        <Route path="/recommended" element={<Recommended/>} />
         </Routes>
-        <SearchBar />
-        <SubscribeButton />
-        <LoginButton />
+       
       </div>
     </Router>
   );

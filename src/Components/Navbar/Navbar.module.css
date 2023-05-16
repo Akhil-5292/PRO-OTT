@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav{
+    /* border: 1px solid; */
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: #ECC9EE;
+}
+
+.nav ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav ul li{
+  display: flex;
+  justify-content: center;
+}

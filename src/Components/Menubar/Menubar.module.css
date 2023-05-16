@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menubar{
+  /* border: 1px solid; */
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.menubar img {
+    width: 15vw;
+    height: 20vh;
+    transition: transform 0.3s;
+  }
+  
+  .menubar img:hover {
+    transform: scale(1.2);
+  }

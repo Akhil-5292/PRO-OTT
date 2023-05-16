@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    /* border:1px solid; */
+    height: 90vh;
+}
+
+.image{
+    height: 50vh;
+    width: 50vw;
+}
+
+p{
+    width: 50vw;
+}
