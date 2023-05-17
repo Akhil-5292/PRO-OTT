@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-
+import { Link, useNavigate } from 'react-router-dom';
+import { MenuItem } from '@mui/material';
+import '../App.css'
 
 export default function BasicMenu() {
-
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -35,11 +35,13 @@ export default function BasicMenu() {
         MenuListProps={{
           'aria-labelledby': 'basic-button',
         }}
+        // style={{display:'flex', flexDirection:'column',width:'500px', height:'800px',padding:'25px',justifyContent:'center', alignItems:'center'}}
       >
-        <MenuItem onClick={handleClose}>Recommended for you</MenuItem>
-        <MenuItem onClick={handleClose}>Animated Adventures</MenuItem>
-        <MenuItem onClick={handleClose}>Popular Shows/Drama</MenuItem>
-        <MenuItem onClick={handleClose}>New & Upcoming</MenuItem>
+       
+        <Link style={{display:'flex', flexDirection:'column',width:'15vw', height:'7vh',justifyContent:'center', alignItems:'center'}} to='/recommended'>Recommended for you</Link>
+        <Link style={{display:'flex', flexDirection:'column',width:'15vw', height:'7vh',justifyContent:'center', alignItems:'center'}}  to='/animated'>Animated Adventures</Link>
+        <Link style={{display:'flex', flexDirection:'column',width:'15vw', height:'7vh',justifyContent:'center', alignItems:'center'}}  to='/popularShows'>Popular Shows/Drama</Link>
+        <Link style={{display:'flex', flexDirection:'column',width:'15vw', height:'7vh',justifyContent:'center', alignItems:'center'}}  to='/new&upcoming'>New & Upcoming</Link>
       </Menu>
     </div>
   );

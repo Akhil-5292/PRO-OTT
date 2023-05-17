@@ -11,7 +11,7 @@ function LoginButton() {
     <div>
       <button style={{backgroundColor:'#B799FF', height:'20px' ,border:'none',width:'55px'}} onClick={togglePopup}>Login</button>
       {showPopup && (
-        <div className="popup" style={{backgroundColor:'#FFABAB',width:'100vw',height:'93vh',position:'absolute', top:'6.9%', right:'0'}}>
+        <div className="popup" style={{backgroundColor:'#FFABAB',width:'100vw',height:'93vh',position:'absolute', top:'6.9%', right:'0',zIndex:'1'}}>
          <form style={{position:'absolute', top:'40%', right:'50%', display:'flex', flexDirection:'column'}}>
          <label for="uname"><b>Username</b></label>
          <input type="text" placeholder="Enter Username" name="uname" required/>

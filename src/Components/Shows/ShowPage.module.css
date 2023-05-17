@@ -7,6 +7,10 @@
 .wrapper{
     /* border:1px solid; */
     height: 90vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* flex-direction: column; */
 }
 
 .image{
@@ -16,4 +20,10 @@
 
 p{
     width: 50vw;
+}
+
+.container{
+    position: absolute;
+    top: 10%;
+    left: 30%;
 }

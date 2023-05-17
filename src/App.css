@@ -37,3 +37,10 @@
   }
 }
 
+menu{
+  height: vh;
+}
+
+Link{
+  height: 50vh;
+}
